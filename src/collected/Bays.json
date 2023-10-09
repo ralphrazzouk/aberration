@@ -1,0 +1,100 @@
+[
+	{
+		"Name": "Palus Epidemiarum",
+		"Def": "Marsh of Epidemics",
+		"Diam": 286,
+		"Lat": -32,
+		"Long": -28.2
+	},
+	{
+		"Name": "Palus Putredinis",
+		"Def": "Marhs of Decay",
+		"Diam": "161",
+		"Lat": 27.4,
+		"Long": 0
+	},
+	{
+		"Name": "Palus Somni",
+		"Def": "Marsh of Sleep",
+		"Diam": 143,
+		"Lat": 14.1,
+		"Long": 45
+	},
+	{
+		"Name": "Sinus Aestuum",
+		"Def": "Seething Bay",
+		"Diam": 290,
+		"Lat": 12.1,
+		"Long": -8.3
+	},
+	{
+		"Name": "Sinus Amoris",
+		"Def": "Bay of Love",
+		"Diam": 130,
+		"Lat": 19.9,
+		"Long": 37.3
+	},
+	{
+		"Name": "Sinus Asperitatis",
+		"Def": "Bay of Roughness",
+		"Diam": 206,
+		"Lat": -3.8,
+		"Long": 27.4
+	},
+	{
+		"Name": "Sinus Concordiae",
+		"Def": "Bay of Harmony",
+		"Diam": 142,
+		"Lat": 10.8,
+		"Long": 43.2
+	},
+	{
+		"Name": "Sinus Fidei",
+		"Def": "Bay of Trust",
+		"Diam": 70,
+		"Lat": 18,
+		"Long": 2
+	},
+	{
+		"Name": "Sinus Honoris",
+		"Def": "Bay of Honor",
+		"Diam": 109,
+		"Lat": 11.7,
+		"Long": 17.9
+	},
+	{
+		"Name": "Sinus Iridum",
+		"Def": "Bay of Rainbows",
+		"Diam": 236,
+		"Lat": 45.01,
+		"Long": -31.67
+	},
+	{
+		"Name": "Sinus Lunicus",
+		"Def": "Lunik Bay",
+		"Diam": 126,
+		"Lat": 32.4,
+		"Long": -1.9
+	},
+	{
+		"Name": "Sinus Medii",
+		"Def": "Bay of the Center",
+		"Diam": 335,
+		"Lat": 1.6,
+		"Long": 1
+	},
+	{
+		"Name": "Sinus Roris",
+		"Def": "Bay of Dew",
+		"Diam": 202,
+		"Lat": 54,
+		"Long": -56.6
+	},
+	{
+		"Name": "Sinus Successus",
+		"Def": "Bay of Success",
+		"Diam": 132,
+		"Lat": 0.9,
+		"Long": 59
+	}
+]

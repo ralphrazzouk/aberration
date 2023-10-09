@@ -1,0 +1,86 @@
+[
+	{
+		"Name": "Vallis Alpes",
+		"Crater": "",
+		"Diam": 166,
+		"Lat": 48.5,
+		"Long": 3.2
+	},
+	{
+		"Name": "Vallis Baade",
+		"Crater": "Baade",
+		"Diam": 203,
+		"Lat": -45.9,
+		"Long": -76.2
+	},
+	{
+		"Name": "Vallis Bohr",
+		"Crater": "Bohr",
+		"Diam": 80,
+		"Lat": 12.4,
+		"Long": -86.6
+	},
+	{
+		"Name": "Vallis Bouvard",
+		"Crater": "",
+		"Diam": 284,
+		"Lat": -38.3,
+		"Long": -83.1
+	},
+	{
+		"Name": "Vallis Capella",
+		"Crater": "Capella",
+		"Diam": 49,
+		"Lat": -7.6,
+		"Long": 34.9
+	},
+	{
+		"Name": "Vallis Inghirami",
+		"Crater": "Inghirami",
+		"Diam": 148,
+		"Lat": -43.8,
+		"Long": -72.2
+	},
+	{
+		"Name": "Vallis Palitzsch",
+		"Crater": "Palitzsch",
+		"Diam": 132,
+		"Lat": -26.4,
+		"Long": 64.3
+	},
+	{
+		"Name": "Vallis Planck",
+		"Crater": "Planck",
+		"Diam": 451,
+		"Lat": -58.4,
+		"Long": 126.1
+	},
+	{
+		"Name": "Vallis Rheita",
+		"Crater": "Rheita",
+		"Diam": 445,
+		"Lat": -42.5,
+		"Long": 51.5
+	},
+	{
+		"Name": "Vallis Schrödinger",
+		"Crater": "Schrödinger",
+		"Diam": 310,
+		"Lat": -67,
+		"Long": 105
+	},
+	{
+		"Name": "Vallis Schröteri",
+		"Crater": "Schröteri",
+		"Diam": 168,
+		"Lat": 26.2,
+		"Long": -50.8
+	},
+	{
+		"Name": "Vallis Snellius",
+		"Crater": "Snellius",
+		"Diam": 592,
+		"Lat": -31.1,
+		"Long": 56
+	}
+]

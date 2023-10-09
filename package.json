@@ -1,0 +1,18 @@
+{
+	"name": "aberration",
+	"private": true,
+	"version": "0.0.0",
+	"type": "module",
+	"scripts": {
+		"dev": "vite",
+		"build": "vite build",
+		"preview": "vite preview"
+	},
+	"devDependencies": {
+		"vite": "^3.1.0"
+	},
+	"dependencies": {
+		"mime-db": "^1.52.0",
+		"three": "^0.144.0"
+	}
+}

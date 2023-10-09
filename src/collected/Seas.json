@@ -1,0 +1,163 @@
+[
+	{
+		"Name": "Mare Frigoris",
+		"Def": "Sea of Cold",
+		"Diam": 1446,
+		"Lat": 56,
+		"Long": 1.4
+	},
+	{
+		"Name": "Mare Vaporum",
+		"Def": "Sea of Vapors",
+		"Diam": 242,
+		"Lat": 13.3,
+		"Long": 3.6
+	},
+	{
+		"Name": "Mare Imbrium",
+		"Def": "Sea of Rains",
+		"Diam": 1146,
+		"Lat": 32.8,
+		"Long": -15.6
+	},
+	{
+		"Name": "Mare Nubium",
+		"Def": "Sea of Clouds",
+		"Diam": 715,
+		"Lat": -21.3,
+		"Long": -16.6
+	},
+	{
+		"Name": "Mare Serenitatis",
+		"Def": "Sea of Serenity",
+		"Diam": 674,
+		"Lat": 28,
+		"Long": 17.5
+	},
+	{
+		"Name": "Mare Cognitum",
+		"Def": "Known Sea",
+		"Diam": 350,
+		"Lat": -10.5,
+		"Long": -22.3
+	},
+	{
+		"Name": "Mare Insularum",
+		"Def": "Sea of Islands",
+		"Diam": 512,
+		"Lat": 7.5,
+		"Long": -30.9
+	},
+	{
+		"Name": "Mare Tranquillitatis",
+		"Def": "Sea of Tranquility",
+		"Diam": 876,
+		"Lat": 8.5,
+		"Long": 31.4
+	},
+	{
+		"Name": "Mare Nectartis",
+		"Def": "Sea of Nectar",
+		"Diam": 340,
+		"Lat": -15.2,
+		"Long": 34.6
+	},
+	{
+		"Name": "Mare Humorum",
+		"Def": "Sea of Moisture",
+		"Diam": 420,
+		"Lat": -24.4,
+		"Long": -38.6
+	},
+	{
+		"Name": "Mare Fecunditatis",
+		"Def": "Sea of Fertility",
+		"Diam": 840,
+		"Lat": -7.8,
+		"Long": 51.3
+	},
+	{
+		"Name": "Oceanus Procellarum",
+		"Def": "Ocean of Storms",
+		"Diam": 2592,
+		"Lat": 18.4,
+		"Long": -57.4
+	},
+	{
+		"Name": "Mare Crisium",
+		"Def": "Sea of Crises",
+		"Diam": 556,
+		"Lat": 17,
+		"Long": 59.1
+	},
+	{
+		"Name": "Mare Spumans",
+		"Def": "Sea of Foam",
+		"Diam": 140,
+		"Lat": 1.3,
+		"Long": 65.3
+	},
+	{
+		"Name": "Mare Anguis",
+		"Def": "Serpent Sea",
+		"Diam": 146,
+		"Lat": 22.6,
+		"Long": 67.7
+	},
+	{
+		"Name": "Mare Undarum",
+		"Def": "Sea of Waves",
+		"Diam": 244.84,
+		"Lat": 7.49,
+		"Long": 68.66
+	},
+	{
+		"Name": "Mare Humboldtianum",
+		"Def": "Humboldt's Sea",
+		"Diam": 230,
+		"Lat": 56.9,
+		"Long": 81.5
+	},
+	{
+		"Name": "Mare Marginis",
+		"Def": "Border Sea",
+		"Diam": 358,
+		"Lat": 13.3,
+		"Long": 86.1
+	},
+	{
+		"Name": "Mare Smythii",
+		"Def": "Smyth's Sea",
+		"Diam": 373,
+		"Lat": 1.3,
+		"Long": 87.5
+	},
+	{
+		"Name": "Mare Orientale",
+		"Def": "Eastern Sea",
+		"Diam": 294,
+		"Lat": -19.4,
+		"Long": -92.8
+	},
+	{
+		"Name": "Mare Australe",
+		"Def": "Southern Sea",
+		"Diam": 997,
+		"Lat": -38.9,
+		"Long": 93
+	},
+	{
+		"Name": "Mare Moscoviense",
+		"Def": "Sea of Moscow",
+		"Diam": 276,
+		"Lat": 27.3,
+		"Long": 147.9
+	},
+	{
+		"Name": "Mare Ingenii",
+		"Def": "Sea of Cleverness",
+		"Diam": 282,
+		"Lat": -33.7,
+		"Long": 163.5
+	}
+]

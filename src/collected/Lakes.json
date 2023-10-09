@@ -1,0 +1,142 @@
+[
+	{
+		"Name": "Lacus Aestatis",
+		"Def": "Lake of Summer",
+		"Diam": 90,
+		"Lat": -15,
+		"Long": -69
+	},
+	{
+		"Name": "Lacus Autumni",
+		"Def": "Lake of Autumn",
+		"Diam": 183,
+		"Lat": -9.9,
+		"Long": -83.9
+	},
+	{
+		"Name": "Lacus Bonitatis",
+		"Def": "Lake of Goodness",
+		"Diam": 122,
+		"Lat": 23.2,
+		"Long": 44.3
+	},
+	{
+		"Name": "Lacus Doloris",
+		"Def": "Lake of Sorrow",
+		"Diam": 103,
+		"Lat": 16.8,
+		"Long": 8.6
+	},
+	{
+		"Name": "Lacus Excellentiae",
+		"Def": "Lake of Excellence",
+		"Diam": 184,
+		"Lat": -35.4,
+		"Long": -44
+	},
+	{
+		"Name": "Lacus Felicitatis",
+		"Def": "Lake of Happiness",
+		"Diam": 98,
+		"Lat": 18.5,
+		"Long": 5.4
+	},
+	{
+		"Name": "Lacus Gaudii",
+		"Def": "Lake of Joy",
+		"Diam": 113,
+		"Lat": 16.3,
+		"Long": 12.3
+	},
+	{
+		"Name": "Lacus Hiemalis",
+		"Def": "Lake of Winter",
+		"Diam": 50,
+		"Lat": 15,
+		"Long": 14
+	},
+	{
+		"Name": "Lacus Lenitatis",
+		"Def": "Lake of Softness",
+		"Diam": 80,
+		"Lat": 14.3,
+		"Long": 12.1
+	},
+	{
+		"Name": "Lacus Luxuriae",
+		"Def": "Lake of Luxury",
+		"Diam": 50,
+		"Lat": 19,
+		"Long": 176
+	},
+	{
+		"Name": "Lacus Mortis",
+		"Def": "Lake of Death",
+		"Diam": 151,
+		"Lat": 45.13,
+		"Long": 27.32
+	},
+	{
+		"Name": "Lacus Oblivionis",
+		"Def": "Lake of Forgetfulness",
+		"Diam": 50,
+		"Lat": -21,
+		"Long": -168
+	},
+	{
+		"Name": "Lacus Odii",
+		"Def": "Lake of Hatred",
+		"Diam": 70,
+		"Lat": 19,
+		"Long": 7
+	},
+	{
+		"Name": "Lacus Perseverantiae",
+		"Def": "Lake of Perseverance",
+		"Diam": 70,
+		"Lat": 8,
+		"Long": 62
+	},
+	{
+		"Name": "Lacus Solitudinis",
+		"Def": "Lake of Solitude",
+		"Diam": 139,
+		"Lat": -27.8,
+		"Long": 104.3
+	},
+	{
+		"Name": "Lacus Somniorum",
+		"Def": "Lake of Dreams",
+		"Diam": 384,
+		"Lat": 37.56,
+		"Long": 30.8
+	},
+	{
+		"Name": "Lacus Spei",
+		"Def": "Lake of Hope",
+		"Diam": 80,
+		"Lat": 43,
+		"Long": 65
+	},
+	{
+		"Name": "Lacus Temporis",
+		"Def": "Lake of Time",
+		"Diam": 117,
+		"Lat": 45.9,
+		"Long": 58.4
+	},
+	{
+		"Name": "Lacus Timoris",
+		"Def": "Lake of Fear",
+		"Diam": 117,
+		"Lat": -39.4,
+		"Long": 27.9
+	},
+	{
+		"Name": "Lacus Veris",
+		"Def": "Lake of Spring",
+		"Diam": 396,
+		"Lat": -16.5,
+		"Long": -86.1
+	}
+]

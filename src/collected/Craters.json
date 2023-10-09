@@ -1,0 +1,212 @@
+[
+	{
+		"Name": "Albategnius",
+		"Diam": 129,
+		"Depth": 4.4,
+		"Lat": -11.2,
+		"Long": 4.1
+	},
+	{
+		"Name": "Aristarchus",
+		"Diam": 40,
+		"Depth": 2.7,
+		"Lat": 23.7,
+		"Long": -47.4
+	},
+	{
+		"Name": "Aristoteles",
+		"Diam": 87,
+		"Depth": 3.3,
+		"Lat": 50.2,
+		"Long": 17.4
+	},
+	{
+		"Name": "Bailly",
+		"Diam": 303,
+		"Depth": 4.3,
+		"Lat": -66.8,
+		"Long": -69.4
+	},
+	{
+		"Name": "Clavius",
+		"Diam": 231,
+		"Depth": 3.5,
+		"Lat": -58.4,
+		"Long": -14.4
+	},
+	{
+		"Name": "Copernicus",
+		"Diam": 93,
+		"Depth": 3.8,
+		"Lat": 9.62,
+		"Long": -20.08
+	},
+	{
+		"Name": "Fra Mauro",
+		"Diam": 95,
+		"Depth": "",
+		"Lat": -6,
+		"Long": -17
+	},
+	{
+		"Name": "Humboldt",
+		"Diam": 199.46,
+		"Depth": "",
+		"Lat": -27.02,
+		"Long": 80.96
+	},
+	{
+		"Name": "Janssen",
+		"Diam": 201,
+		"Depth": 2.9,
+		"Lat": -44.96,
+		"Long": 40.82
+	},
+	{
+		"Name": "Langrenus",
+		"Diam": 132,
+		"Depth": 2.7,
+		"Lat": -8.9,
+		"Long": 60.9
+	},
+	{
+		"Name": "Longomontanus",
+		"Diam": 145,
+		"Depth": 4.5,
+		"Lat": -49.5,
+		"Long": -21.7
+	},
+	{
+		"Name": "Maginus",
+		"Diam": 194,
+		"Depth": 4.3,
+		"Lat": -50,
+		"Long": -6.2
+	},
+	{
+		"Name": "Metius",
+		"Diam": 88,
+		"Depth": 3.0,
+		"Lat": -40.3,
+		"Long": 43.3
+	},
+	{
+		"Name": "Moretus",
+		"Diam": 114,
+		"Depth": 5.0,
+		"Lat": -70.6,
+		"Long": -5.5
+	},
+	{
+		"Name": "Petavius",
+		"Diam": 177,
+		"Depth": 3.4,
+		"Lat": -25.3,
+		"Long": 60.4
+	},
+	{
+		"Name": "Picard",
+		"Diam": 23,
+		"Depth": 2.4,
+		"Lat": 14.57,
+		"Long": 54.72
+	},
+	{
+		"Name": "Piccolomini",
+		"Diam": 88,
+		"Depth": 4.5,
+		"Lat": -29.7,
+		"Long": 32.3
+	},
+	{
+		"Name": "Pitatus",
+		"Diam": 100.63,
+		"Depth": 0.9,
+		"Lat": -29.88,
+		"Long": -13.53
+	},
+	{
+		"Name": "Plinius",
+		"Diam": 41,
+		"Depth": 4.3,
+		"Lat": 15.4,
+		"Long": 23.7
+	},
+	{
+		"Name": "Rheita",
+		"Diam": 70,
+		"Depth": 4.3,
+		"Lat": -37.1,
+		"Long": 47.2
+	},
+	{
+		"Name": "Russell",
+		"Diam": 103,
+		"Depth": "",
+		"Lat": 26.5,
+		"Long": -75.4
+	},
+	{
+		"Name": "Schickard",
+		"Diam": 212,
+		"Depth": 1.5,
+		"Lat": -44.4,
+		"Long": -55.1
+	},
+	{
+		"Name": "Seleucus",
+		"Diam": 61,
+		"Depth": 3.0,
+		"Lat": 21,
+		"Long": -66.6
+	},
+	{
+		"Name": "Stadius",
+		"Diam": 69,
+		"Depth": "",
+		"Lat": 10.48,
+		"Long": -13.77
+	},
+	{
+		"Name": "Stöfler",
+		"Diam": 126,
+		"Depth": 2.8,
+		"Lat": -41.1,
+		"Long": 6
+	},
+	{
+		"Name": "Thebit",
+		"Diam": 57,
+		"Depth": 3.3,
+		"Lat": -22,
+		"Long": -4
+	},
+	{
+		"Name": "Theophilus",
+		"Diam": 100,
+		"Depth": 3.2,
+		"Lat": -11.4,
+		"Long": 26.4
+	},
+	{
+		"Name": "Tycho",
+		"Diam": 85,
+		"Depth": 4.7,
+		"Lat": -43.31,
+		"Long": -11.36
+	},
+	{
+		"Name": "Vendelinus",
+		"Diam": 147,
+		"Depth": 2.6,
+		"Lat": -16.46,
+		"Long": 61.55
+	},
+	{
+		"Name": "Wargentin",
+		"Diam": 84,
+		"Depth": "",
+		"Lat": -49.6,
+		"Long": -60.2
+	}
+]
