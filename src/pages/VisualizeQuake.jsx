@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import QuakeThree from "../three/quake3";
 
-const Quake = () => {
+const VisualizeQuake = () => {
 	return (
 		<>
 			{/* <div>Quake</div>
@@ -13,4 +13,4 @@ const Quake = () => {
 	);
 };
 
-export default Quake;
+export default VisualizeQuake;

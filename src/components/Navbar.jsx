@@ -5,7 +5,7 @@ import logo from "/icon.svg";
 import { AiOutlineMenu, AiOutlineClose, AiOutlineHome, AiOutlineGithub } from "react-icons/ai";
 import { BsFillPeopleFill } from "react-icons/bs";
 import { FiSun, FiMoon, FiCodesandbox } from "react-icons/fi";
-import { GiLunarModule, GiLunarWand } from "react-icons/gi";
+import { GiLunarModule, GiLunarWand, GiQuakeStomp } from "react-icons/gi";
 import { RiFilePaper2Fill } from "react-icons/ri";
 import { WiEarthquake, WiMoonAltWaxingCrescent1 } from "react-icons/wi";
 
@@ -65,36 +65,42 @@ const Navbar = () => {
 		},
 		{
 			id: "02",
-			name: "Quake",
-			link: "/quake",
+			name: "Detect Quake",
+			link: "/detect-quake",
 			icon: <WiEarthquake />,
 		},
 		{
 			id: "03",
-			name: "Lunar   Module",
+			name: "Visualize Quake",
+			link: "/visualize-quake",
+			icon: <GiQuakeStomp />,
+		},
+		{
+			id: "04",
+			name: "Lunar Module",
 			link: "/lunar-module",
 			icon: <GiLunarModule />,
 		},
 		{
-			id: "04",
-			name: "About   Moonquakes",
+			id: "05",
+			name: "About Moonquakes",
 			link: "/moonquakes",
 			icon: <GiLunarWand />,
 		},
 		{
-			id: "05",
-			name: "About   Us",
+			id: "06",
+			name: "About Us",
 			link: "/about",
 			icon: <BsFillPeopleFill />,
 		},
 		{
-			id: "06",
+			id: "07",
 			name: "Paper",
 			link: "/paper",
 			icon: <RiFilePaper2Fill />,
 		},
 		{
-			id: "07",
+			id: "08",
 			name: "Source",
 			link: "https://github.com/ralphrazzouk/aberration",
 			icon: <AiOutlineGithub />,

@@ -12,7 +12,7 @@ const Home = () => {
 				<Navbar />
 				<div className="text-center align-middle">
 					<h1 className="font-bold">Aberration</h1>
-					<h2 className="font-medium">Make a Moonquake Map 2.0!</h2>
+					{/* <h2 className="font-medium">Make a Moonquake Map 2.0!</h2> */}
 				</div>
 			</div>
 			{/* <div className="h-fit container-fluid bg-center bg-no-repeat bg-cover">
