@@ -15,7 +15,7 @@ function DetectQuake() {
 
       try {
         // Make an API call to upload the file
-        const response = await fetch('http://127.0.0.1:5173/venv/api/upload', { // Ensure this URL matches your Flask server
+        const response = await fetch('http://127.0.0.1:5173/api/upload', { // Ensure this URL matches your Flask server
           method: 'POST',
           body: formData,
         });
