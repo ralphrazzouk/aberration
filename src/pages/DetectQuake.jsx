@@ -24,7 +24,7 @@ function DetectQuake() {
 
       try {
         const pyodideInstance = await window.loadPyodide();
-        await pyodideInstance.loadPackage(['matplotlib', 'pandas', 'tensorflow', 'numpy', 'sklearn', 'spicy']); // Load both packages
+        await pyodideInstance.loadPackage(['matplotlib', 'pandas', 'numpy', 'scipy']); // Load both packages
 
         // Set the Pyodide instance to state
         setPyodide(pyodideInstance);
@@ -44,58 +44,25 @@ function DetectQuake() {
   };
 
   const handleFileUpload = async () => {
-    if (selectedFile && pyodide) {
-      const reader = new FileReader();
-      reader.onload = async (event) => {
-        const text = event.target.result;
-        setCsvData(text); 
+    if (selectedFile) {
+      const formData = new FormData();
+      formData.append('file', selectedFile);
 
-        const pythonCode = `
-import pandas as pd
-from io import StringIO
-import matplotlib.pyplot as plt
-import base64
-from io import BytesIO
-def plot_please():
-  csv_data = StringIO("""${text}""")
-  try:
-      df = pd.read_csv(csv_data)
-      df['time_abs'] = pd.to_datetime(df['time_abs(%Y-%m-%dT%H:%M:%S.%f)'])
+      try {
+        // Make an API call to upload the file
+        const response = await fetch('https://aberration-flask.onrender.com/process-file', { 
+          method: 'POST',
+          body: formData,
+        });
+        
+        if (!response.ok) {
+          throw new Error('Failed to upload file');
+        }
 
-      # Create the plot
-      plt.figure(figsize=(10, 5))
-      plt.plot(df['time_abs'], df['velocity(m/s)'], label='Velocity (m/s)', color='b')
-      plt.title('Velocity Over Time')
-      plt.xlabel('Time (Absolute)')
-      plt.ylabel('Velocity (m/s)')
-      plt.xticks(rotation=45)
-      plt.legend()
-      plt.tight_layout()
-
-      # Save the plot to a BytesIO object
-      buf = BytesIO()
-      plt.savefig(buf, format='png')
-      buf.seek(0)
-
-      # Encode the image to base64
-      img_str = base64.b64encode(buf.read()).decode('utf-8')
-      img_tag = f"data:image/png;base64,{img_str}"
-
-      # Clear the figure to avoid overlap in subsequent plots
-      plt.clf()
-
-      # Return the image data
-      return img_tag
-  except Exception as e:
-      print(e)
-      error_message = str(e)  # Capture any error messages
-      return error_message
-plot_please()
-`;
-  
-
-        try {
-          const plotImage = await pyodide.runPythonAsync(pythonCode);
+          const data = await response.json();
+          console.log('File uploaded successfully:', data);
+        
+          const plotImage = `data:image/png;base64,${data.image}`;
           alert(plotImage);
           alert("image received")
 
@@ -117,9 +84,8 @@ plot_please()
           console.error('Error running Python code:', error);
         }
       };
-      reader.readAsText(selectedFile);
     }
-  };
+  
 
   const styles = {
     container: {
@@ -196,7 +162,7 @@ plot_please()
   };
 
   return (
-    <div className="bg-homeBg min-h-screen dark:bg-homeBg-dark bg-no-repeat bg-center bg-cover bg-fixed  md:pb-16 w-full">
+    <div className="w-full min-h-screen bg-fixed bg-center bg-no-repeat bg-cover bg-homeBg dark:bg-homeBg-dark md:pb-16">
       <h1 style={styles.title}>Seismic Detection Tool</h1>
       <p style={styles.paragraph}>
         Upload your seismic CSV data, and this tool will generate a plot showing the arrival time of the seismic activity, if any.
@@ -243,6 +209,6 @@ plot_please()
       </div>
     </div>
   );
-}
+};
 
 export default DetectQuake;
