@@ -24,7 +24,7 @@ function DetectQuake() {
 
       try {
         const pyodideInstance = await window.loadPyodide();
-        await pyodideInstance.loadPackage(['matplotlib', 'pandas', 'numpy', 'scipy']); // Load both packages
+        await pyodideInstance.loadPackage(['numpy']); // Load both packages
 
         // Set the Pyodide instance to state
         setPyodide(pyodideInstance);
@@ -49,7 +49,7 @@ function DetectQuake() {
       formData.append('file', selectedFile);
 
       try {
-        alert("try")
+        // alert("try")
         // Make an API call to upload the file
         const response = await fetch('https://aberration-server.onrender.com/process-file', { 
           method: 'POST',
@@ -64,22 +64,19 @@ function DetectQuake() {
           console.log('File uploaded successfully:', data);
         
           const plotImage = `data:image/png;base64,${data.image}`;
-          alert(plotImage);
-          alert("image received")
+          // alert(plotImage);
+          // alert("image received");
 
           const img = document.createElement('img');
           img.src = plotImage;
           img.alt = "Generated Plot";
           img.style.maxWidth = '100%';
           img.style.height = 'auto';
-          alert("setting up image");
+          // alert("setting up image");
 
-          const existingImages = document.querySelectorAll('.generated-plot');
-          existingImages.forEach(image => image.remove());
-  
-          img.className = 'generated-plot';
-          document.body.appendChild(img);
-          alert("mafroud appended");
+          const divRight = document.getElementById('divright');
+          divRight.appendChild(img);
+          // alert("mafroud appended");
   
         } catch (error) {
           console.error('Error running Python code:', error);
@@ -89,6 +86,9 @@ function DetectQuake() {
   
 
   const styles = {
+    entirePage:{
+      marginTop:'10px'
+    },
     container: {
       maxWidth: '35%',
       margin: '0 auto',
@@ -99,12 +99,10 @@ function DetectQuake() {
       backgroundColor: 'rgba(33, 33, 33, 0.85)',
       color: 'white',
       float: 'left'
-      
     },
     container_right: {
-      width: '65%',
+      width: '60%',
       margin: '0 auto',
-      padding: '20px',
       color: 'white',
       float: 'right',
       flex:1
@@ -153,7 +151,6 @@ function DetectQuake() {
       marginBottom: '30px',
     },
     image: {
-      marginTop: '20px',
       maxWidth: '100%',
       height: 'auto',
     },
@@ -163,7 +160,9 @@ function DetectQuake() {
   };
 
   return (
-    <div className="w-full min-h-screen bg-fixed bg-center bg-no-repeat bg-cover bg-homeBg dark:bg-homeBg-dark md:pb-16">
+    <div className="w-full min-h-screen bg-fixed bg-center bg-no-repeat bg-cover bg-homeBg dark:bg-homeBg-dark md:pb-16" >
+      <br></br>
+      <br></br>
       <h1 style={styles.title}>Seismic Detection Tool</h1>
       <p style={styles.paragraph}>
         Upload your seismic CSV data, and this tool will generate a plot showing the arrival time of the seismic activity, if any.
@@ -203,11 +202,6 @@ function DetectQuake() {
         </div>
         </>
         )}
-        <div className="generated-plot">
-
-        
-        
-      </div>
     </div>
   );
 };
