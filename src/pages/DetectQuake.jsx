@@ -49,6 +49,7 @@ function DetectQuake() {
       formData.append('file', selectedFile);
 
       try {
+        alert("try")
         // Make an API call to upload the file
         const response = await fetch('https://aberration-server.onrender.com/process-file', { 
           method: 'POST',
