@@ -54,9 +54,7 @@ const DetectQuake = () => {
       const response = await fetch('https://aberration-server.onrender.com/process-file', { 
         method: 'POST',
         body: formData,
-        headers: {
-        'Access-Control-Allow-Origin': '*',
-        },
+        
       });
       
       if (!response.ok) {
