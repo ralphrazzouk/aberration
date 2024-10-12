@@ -52,7 +52,7 @@ const DetectQuake = () => {
       try {
         alert("try")
         // Make an API call to upload the file
-        const response = await fetch('https://aberration-server.onrender.com', { 
+        const response = await fetch('https://aberration-server.onrender.com/process-file', { 
           method: 'POST',
           body: formData,
         });
