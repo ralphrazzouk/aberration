@@ -231,7 +231,7 @@ const DetectQuake = () => {
 
                   <div style={styles.uploadtitle}>Upload CSV File</div>
                   <div>
-                    <label htmlFor="dropzone-file" style={styles.uploadarea}>
+                    <label htmlFor="file-upload" style={styles.uploadarea}>
                         <span style={styles.uploadlabel}>
                             <Upload style={styles.upload} />
                             <span style={styles.uploadtext}>Drop files to attach, or click to browse</span>
@@ -239,6 +239,9 @@ const DetectQuake = () => {
                         <input id="file-upload" type="file" className="hidden" accept=".csv" onChange={handleFileChange} />
                     </label>
                   </div>
+
+                  
+
                   <br></br>
                   
                   <div style={{fontSize: '24px', fontWeight: 'semibold'}}>Note:</div>
