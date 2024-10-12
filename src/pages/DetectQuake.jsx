@@ -63,8 +63,9 @@ const DetectQuake = () => {
         throw new Error('Failed to upload file');
       }
       
-      console.log('File uploaded successfully:', data);
+      console.log('File upload next');
       const data = await response.json();
+      console.log('File uploaded successfully:', data);
       
       const plotImage = `data:image/png;base64,${data.image}`;
       const img = document.createElement('img');
