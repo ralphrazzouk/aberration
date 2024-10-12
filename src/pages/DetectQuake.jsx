@@ -89,9 +89,6 @@ const DetectQuake = () => {
     <>
       <div className="w-full min-h-screen bg-fixed bg-center bg-no-repeat bg-cover bg-homeBg dark:bg-homeBg-dark md:pb-16">
 				<div className="text-center">
-        <div className="w-40">
-          {/* Background image */}
-          <div className="absolute inset-0 z-0 bg-center bg-cover" style={{backgroundImage: "url('/moon/MoonWallpaper1')"}}></div>
           
           <div className="z-10 items-center justify-center mx-8">
             {/* Title */}
@@ -152,14 +149,13 @@ const DetectQuake = () => {
           </div>
           
           {/* Graph section */}
-          <div className="p-4 bg-gray-900 bg-opacity-80">
+          {/* <div className="p-4 bg-gray-900 bg-opacity-80">
             <img 
               src="/api/placeholder/800/200" 
               alt="Seismic Activity Graph" 
               className="h-auto rounded-lg shadow-lg"
             />
-          </div>
-      </div>
+          </div> */}
 				</div>
 			</div>
     </>
