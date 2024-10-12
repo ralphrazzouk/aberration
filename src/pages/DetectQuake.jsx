@@ -50,39 +50,36 @@ const DetectQuake = () => {
       formData.append('file', selectedFile);
 
       try {
-        alert("try")
-        // Make an API call to upload the file
-        const response = await fetch('https://aberration-server.onrender.com/process-file', { 
-          method: 'POST',
-          body: formData,
-        });
+      // Make an API call to upload the file
+      const response = await fetch('https://aberration-server.onrender.com/process-file', { 
+        method: 'POST',
+        body: formData,
+        headers: {
+        'Access-Control-Allow-Origin': '*',
+        },
+      });
       
-        if (!response.ok) {
-          throw new Error('Failed to upload file');
-        }
-
-          const data = await response.json();
-          console.log('File uploaded successfully:', data);
-      
-          const plotImage = `data:image/png;base64,${data.image}`;
-          // alert(plotImage);
-          // alert("image received");
-
-          const img = document.createElement('img');
-          img.src = plotImage;
-          img.alt = "Generated Plot";
-          img.style.maxWidth = '100%';
-          img.style.height = 'auto';
-          // alert("setting up image");
-
-          const divRight = document.getElementById('divright');
-          divRight.appendChild(img);
-          // alert("mafroud appended");
-
-        } catch (error) {
-          console.error('Error running Python code:', error);
-        }
+      if (!response.ok) {
+        throw new Error('Failed to upload file');
       }
+      
+      const data = await response.json();
+      console.log('File uploaded successfully:', data);
+      
+      const plotImage = `data:image/png;base64,${data.image}`;
+      const img = document.createElement('img');
+      img.src = plotImage;
+      img.alt = "Generated Plot";
+      img.style.maxWidth = '100%';
+      img.style.height = 'auto';
+
+      const divRight = document.getElementById('divright');
+      divRight.appendChild(img);
+
+      } catch (error) {
+      console.error('Error running Python code:', error);
+      }
+    }
     }
 
     const styles = {
