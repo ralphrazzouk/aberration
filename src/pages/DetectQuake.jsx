@@ -1,10 +1,10 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 
 function DetectQuake() {
   const [pythonOutput, setPythonOutput] = useState("Loading Model...");
-  const [csvData, setCsvData] = useState(null);
+  // const [csvData, setCsvData] = useState(null);
   const [selectedFile, setSelectedFile] = useState(null);
-  const [imageSrc, setImageSrc] = useState(null);
+  // const [imageSrc, setImageSrc] = useState(null);
   const [pyodide, setPyodide] = useState(null); // State to hold the Pyodide instance
 
   const loadScript = (src) => {
@@ -81,7 +81,7 @@ function DetectQuake() {
         } catch (error) {
           console.error('Error running Python code:', error);
         }
-      };
+      }
     }
   
 
@@ -171,12 +171,13 @@ function DetectQuake() {
       <br></br>
       <h1 style={styles.title}>Seismic Detection Tool</h1>
       <p style={styles.paragraph}>
-        Upload your seismic CSV data, and this tool will generate a plot showing the arrival time of the seismic activity, if any.
+        Upload your seismic data in the form of CSV file and this tool will use a convolution neural network
+        to predict the arrival time of the seismic activity, if any, and generate a plot showing it.
       </p>
       <div style={styles.centralize}>
         <p>{pythonOutput}</p>
       </div>
-      {pythonOutput === "The Model is loaded. Please proceed..." && (
+      {pythonOutput === "The model is loaded. Please proceed..." && (
         <>
         <div style={styles.holder}>
 
@@ -187,12 +188,12 @@ function DetectQuake() {
           <input type="file" accept=".csv" onChange={handleFileChange} />
           <br></br>
           
-          <div>Please make sure that your file (csv or mseed) has the following columns: "time_rel(sec)" and "velocity(m/s)". If not, please set the alternative column label for each.</div>
+          <div>Please make sure that your CSV file has the following columns: &quot;time_rel(sec)&quot; and &quot;velocity(m/s)&quot;. If not, please set the alternative column label for each.</div>
           <br></br>
           <div>
             <ul>
-              <li>Your "Time" column is labelled: <input type="text" defaultValue="time_rel(sec)" style={styles.inputforcolumns}></input></li>
-              <li>Your "Velocity" column is labelled: <input type="text" defaultValue="velocity(m/s)" style={styles.inputforcolumns}></input></li>
+              <li>Your &quot;Time&quot; column is labelled: <input type="text" defaultValue="time_rel(sec)" style={styles.inputforcolumns}></input></li>
+              <li>Your &quot;Velocity&quot; column is labelled: <input type="text" defaultValue="velocity(m/s)" style={styles.inputforcolumns}></input></li>
             </ul>
           </div>
           <br></br>
@@ -211,6 +212,6 @@ function DetectQuake() {
         )}
     </div>
   );
-};
+}
 
 export default DetectQuake;
