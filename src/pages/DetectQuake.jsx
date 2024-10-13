@@ -98,7 +98,7 @@ const DetectQuake = () => {
       margin: '8px auto',
     },
     container: {
-      maxWidth: '80%',
+      maxWidth: '100%',
       margin: '0 auto',
       padding: '20px',
       border: '1px solid #ccc',
