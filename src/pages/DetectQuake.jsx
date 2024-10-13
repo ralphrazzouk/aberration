@@ -94,7 +94,7 @@ const DetectQuake = () => {
   const styles = {
     entirePage:{
       marginTop:'10px',
-      maxWidth: '50%',
+      maxWidth: '60%',
       margin: '8px auto',
     },
     container: {
@@ -107,13 +107,6 @@ const DetectQuake = () => {
       backgroundColor: 'rgba(20, 20, 20, 0.95)',
       color: 'white',
       float: 'left'
-    },
-    container_right: {
-      width: '60%',
-      margin: '0 auto',
-      color: 'white',
-      float: 'right',
-      flex:1
     },
     title: {
       textAlign: 'center',
@@ -139,6 +132,8 @@ const DetectQuake = () => {
       color: 'white',
       cursor: 'pointer',
       transition: 'background-color 0.3s',
+      display: 'block',
+      margin: '0 auto',
     },
     buttonDisabled: {
       padding: '10px 20px',
@@ -147,6 +142,8 @@ const DetectQuake = () => {
       backgroundColor: 'black',
       color: 'gray',
       cursor: 'not-allowed',
+      display: 'block',
+      margin: '0 auto',
     },
     inputforcolumns: {
       padding: '10px 20px',
@@ -174,7 +171,7 @@ const DetectQuake = () => {
       flexDirection: 'column', // Stack divs in column
       // justifyContent: 'center',
       alignItems: 'center',
-      gap: '50px', // Optional: spacing between the two divs
+      gap: '20px', // Optional: spacing between the two divs
     },
     uploadtitle: {
       fontSize: '24px',
@@ -247,7 +244,11 @@ const DetectQuake = () => {
             <div style={{fontSize: '24px', fontWeight: 'semibold'}}>Note:</div>
             <div style={{fontSize: '18px', fontWeight: 'semibold'}}>Please make sure that your CSV file has the following columns: &quot;time_rel(sec)&quot; and &quot;velocity(m/s)&quot;.</div>
             <div style={{fontSize: '18px', fontWeight: 'semibold'}}>If not, please set the alternative column label for each.</div>
-            <div style={{fontSize: '18px', fontWeight: 'semibold'}}>Additionally, this will take a while to run. In particular, it will be on the order of (number of rows)/32000.</div>
+
+            <br />
+            
+            <div style={{fontSize: '24px', fontWeight: 'semibold'}}>Time needed:</div>
+            <div style={{fontSize: '18px', fontWeight: 'semibold'}}>This will take a while to run. In particular, it will be on the order of (number of rows)/32000 minutes.</div>
             <div style={{fontSize: '18px', fontWeight: 'semibold'}}>For example, if the data set given is 570,000 data points, then it will take 17.8125 minutes.</div>
             <br />
             {/* <div>
