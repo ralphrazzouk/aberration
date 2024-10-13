@@ -247,8 +247,10 @@ const DetectQuake = () => {
             <div style={{fontSize: '24px', fontWeight: 'semibold'}}>Note:</div>
             <div style={{fontSize: '18px', fontWeight: 'semibold'}}>Please make sure that your CSV file has the following columns: &quot;time_rel(sec)&quot; and &quot;velocity(m/s)&quot;.</div>
             <div style={{fontSize: '18px', fontWeight: 'semibold'}}>If not, please set the alternative column label for each.</div>
+            <div style={{fontSize: '18px', fontWeight: 'semibold'}}>Additionally, this will take a while to run. In particular, it will be on the order of (number of rows)/32000.</div>
+            <div style={{fontSize: '18px', fontWeight: 'semibold'}}>For example, if the data set given is 570,000 data points, then it will take 17.8125 minutes.</div>
             <br />
-            <div>
+            {/* <div>
               <ul>
                 <li style={{fontSize: '22px', fontWeight: 'semibold'}}>
                   Your time values column is labeled:
@@ -270,7 +272,7 @@ const DetectQuake = () => {
                 </li>
               </ul>
             </div>
-            <br />
+            <br /> */}
             <button 
               style={selectedFile && !loading ? styles.button : styles.buttonDisabled} 
               onClick={handleFileUpload} 
